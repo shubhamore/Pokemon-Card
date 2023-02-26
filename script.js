@@ -8,6 +8,8 @@ let speed = document.getElementById("speed")
 let pokName = document.getElementById("pok-name")
 let type = document.getElementById('type');
 let card=document.querySelector(".card")
+let content=document.querySelector(".content")
+let ring=document.querySelector(".ring")
 
 const color = {
     bug: "#26de81",
@@ -28,12 +30,24 @@ const color = {
     water: "#0190ff"
 }
 
+function showContent(){
+    content.classList.remove('hide')
+    ring.classList.add('hide')
+}
+
+function hideContent(){
+    content.classList.add('hide')
+    ring.classList.remove('hide')
+}
+
 let getdata = () => {
+    hideContent();
     let id = Math.ceil(Math.random() * 150)
     let finalurl = url + id
     fetch(finalurl).then(response => response.json()).then(data => {
         generatecard(data)
-        console.log(data)
+        showContent()
+        //console.log(data)
     })
 }
 
