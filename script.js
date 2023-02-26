@@ -42,12 +42,13 @@ function hideContent(){
 
 let getdata = () => {
     hideContent();
-    setTimeout(showContent,250)
     let id = Math.ceil(Math.random() * 150)
     let finalurl = url + id
     fetch(finalurl).then(response => response.json()).then(data => {
         generatecard(data)
-        //showContent()
+        image.addEventListener("load",function(){
+            showContent()
+        })
         //console.log(data)
     })
 }
