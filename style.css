@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  background-color: rgb(238, 238, 251);
+  min-height: 100%;
+}
+.brand-name {
+  text-align: center;
+  padding: 10px;
+  font-size: 40px;
+}
+.container{
+    position: absolute;
+    top: 52.5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 325px;
+    max-width: 85%;
+    /* text-align: center; */
+}
+.card{
+    position: relative;
+    width: 100%;
+    background-color: white;
+    background: radial-gradient(circle at 50% 0%, brown 36%, #fff 36%);
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 30px 20px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.25);
+}
+.hp{
+    background-color: white;
+    width: 80px;
+    border-radius: 25px;
+    padding: 7.5px 20px;
+    margin-left: auto;
+}
+#hp{
+    font-weight: bolder;
+}
+.card img{
+    display: block;
+    width: 180px;
+    max-height: 185px;
+    margin: 20px auto;
+}
+#pok-name{
+    margin: 20px auto;
+    text-align: center;
+    font-size: 32.5px;
+}
+#type{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+#type span{
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: white;
+}
+.stats{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 20px;
+}
+.stats p{
+    color: rgb(115, 110, 110);
+    font-weight: 600;
+}
+#btn{
+    display: block;
+    padding: 15px 25px;
+    margin: 20px auto;
+    margin-bottom: 0;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-size: 17.5px;
+    cursor: pointer;
+}
